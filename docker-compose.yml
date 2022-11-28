@@ -1,0 +1,13 @@
+
+version: '3.9'
+services:
+  db:
+    image: postgres:15.0-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: comptoir
+      POSTGRES_USER: comptoir
+      POSTGRES_DB: comptoir
+    ports:
+      - 5432:5432
+
